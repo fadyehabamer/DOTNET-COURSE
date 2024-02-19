@@ -1,0 +1,14 @@
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\bin\Debug\net7.0\DayOneTask.exe
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\bin\Debug\net7.0\DayOneTask.deps.json
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\bin\Debug\net7.0\DayOneTask.runtimeconfig.json
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\bin\Debug\net7.0\DayOneTask.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\bin\Debug\net7.0\DayOneTask.pdb
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.AssemblyInfoInputs.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.AssemblyInfo.cs
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.csproj.CoreCompileInputs.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\refint\DayOneTask.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.pdb
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\DayOneTask.genruntimeconfig.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTask\DayOneTask\obj\Debug\net7.0\ref\DayOneTask.dll

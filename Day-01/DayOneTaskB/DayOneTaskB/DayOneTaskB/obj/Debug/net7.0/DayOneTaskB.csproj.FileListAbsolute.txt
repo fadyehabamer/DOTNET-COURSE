@@ -1,0 +1,14 @@
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\bin\Debug\net7.0\DayOneTaskB.exe
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\bin\Debug\net7.0\DayOneTaskB.deps.json
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\bin\Debug\net7.0\DayOneTaskB.runtimeconfig.json
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\bin\Debug\net7.0\DayOneTaskB.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\bin\Debug\net7.0\DayOneTaskB.pdb
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.AssemblyInfoInputs.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.AssemblyInfo.cs
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.csproj.CoreCompileInputs.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\refint\DayOneTaskB.dll
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.pdb
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\DayOneTaskB.genruntimeconfig.cache
+C:\Users\Fady Ehab Amer\Desktop\DOT NET COURSE\DAY 01\Task Soloution\DayOneTaskB\DayOneTaskB\DayOneTaskB\obj\Debug\net7.0\ref\DayOneTaskB.dll
