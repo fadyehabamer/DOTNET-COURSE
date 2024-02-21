@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\",
+  "WorkspaceRootPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47978211-5FC6-4F41-86C6-9AD833E541C9}|DayOneTask\\DayOneTask.csproj|c:\\users\\fady ehab amer\\desktop\\dot net course\\day 01\\task soloution\\dayonetask\\dayonetask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47978211-5FC6-4F41-86C6-9AD833E541C9}|DayOneTask\\DayOneTask.csproj|solutionrelative:dayonetask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DayOneTask\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\DayOneTask\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\Program.cs",
               "RelativeDocumentMoniker": "DayOneTask\\Program.cs",
-              "ToolTip": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\DayOneTask\\Program.cs",
+              "ToolTip": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\Program.cs",
               "RelativeToolTip": "DayOneTask\\Program.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAoAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-19T22:53:51.199Z",
               "EditorCaption": ""
