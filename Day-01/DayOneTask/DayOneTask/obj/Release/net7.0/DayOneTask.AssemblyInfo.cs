@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DayOneTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0640798aa642164a4c728b7fdab31f10db20824e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+096770e2ad75c5bdd120870437cc365ef9e5f343")]
 [assembly: System.Reflection.AssemblyProductAttribute("DayOneTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DayOneTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

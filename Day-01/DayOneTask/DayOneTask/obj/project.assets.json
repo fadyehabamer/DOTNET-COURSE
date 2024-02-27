@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\DayOneTask\\DayOneTask.csproj",
+      "projectUniqueName": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\DayOneTask.csproj",
       "projectName": "DayOneTask",
-      "projectPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\DayOneTask\\DayOneTask.csproj",
+      "projectPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\DayOneTask.csproj",
       "packagesPath": "C:\\Users\\Fady Ehab Amer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET COURSE\\DAY 01\\Task Soloution\\DayOneTask\\DayOneTask\\obj\\",
+      "outputPath": "C:\\Users\\Fady Ehab Amer\\Desktop\\DOT NET GH\\Day-01\\DayOneTask\\DayOneTask\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fady Ehab Amer\\AppData\\Roaming\\NuGet\\NuGet.Config",
