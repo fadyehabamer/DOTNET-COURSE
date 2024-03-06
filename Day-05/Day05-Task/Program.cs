@@ -76,19 +76,15 @@ public class Program
                         switch (choice)
                         {
                             case 1:
-                                // Add predefined courses to the school
                                 AddPredefinedCourses(school);
                                 break;
                             case 2:
-                                // Add new course
                                 AddNewCourse(school);
                                 break;
                             case 3:
-                                // Add students
                                 AddStudentsManually(school);
                                 break;
                             case 4:
-                                // Display all students
                                 school.DisplayAllStudents();
                                 break;
                             default:
@@ -104,7 +100,6 @@ public class Program
             }
             else if (string.IsNullOrWhiteSpace(password))
             {
-                // Display all students
                 school.DisplayAllStudents();
             }
             else
@@ -112,7 +107,6 @@ public class Program
                 Console.WriteLine("Incorrect password.");
             }
 
-            // Prompt user if they want to repeat
             Console.Write("Do you want to repeat? (yes/no): ");
             string repeatInput = Console.ReadLine();
             repeat = repeatInput.ToLower() == "yes";
@@ -122,13 +116,11 @@ public class Program
     // Method to add predefined courses
     static void AddPredefinedCourses(School school)
     {
-        // Define some predefined courses
         Course[] predefinedCourses = {
             new Course() { Name = "Math", Instructor = "Prof. Smith" },
             new Course() { Name = "Science", Instructor = "Prof. Johnson" }
         };
 
-        // Add predefined courses to the school
         foreach (var course in predefinedCourses)
         {
             school.AddCourse(course);
@@ -136,7 +128,6 @@ public class Program
         Console.WriteLine("Predefined courses added successfully.");
     }
 
-    // Method to add new course
     static void AddNewCourse(School school)
     {
         Console.Write("Enter course name: ");
@@ -148,15 +139,12 @@ public class Program
         Console.WriteLine($"Course '{courseName}' added successfully.");
     }
 
-    // Method to add students manually
     static void AddStudentsManually(School school)
     {
-        // Get the number of students from the user
         Console.Write("\nEnter the number of students: ");
         int numberOfStudents;
         if (int.TryParse(Console.ReadLine(), out numberOfStudents))
         {
-            // Get student details from the user
             for (int i = 0; i < numberOfStudents; i++)
             {
                 Console.WriteLine($"\nStudent {i + 1}:");
@@ -165,7 +153,6 @@ public class Program
                 Student student = new Student() { ID = i + 1, Name = studentName };
                 school.AddStudent(student);
 
-                // Enroll the student in courses
                 Console.WriteLine("Available Courses:");
                 school.DisplayAllCourses();
                 Console.WriteLine("Enter the course name to enroll in (or type 'done' to finish):");

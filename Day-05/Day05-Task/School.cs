@@ -26,13 +26,11 @@ namespace Day05_Task
             students.Add(student);
         }
 
-        // Method to add a course to the school
         public void AddCourse(Course course)
         {
             courses.Add(course);
         }
 
-        // Method to enroll a student in a course
         public void EnrollStudentInCourse(int studentID, string courseName)
         {
             // Find the student by ID
@@ -40,7 +38,6 @@ namespace Day05_Task
 
             if (student != null)
             {
-                // Find the course by name
                 Course course = courses.Find(c => c.Name == courseName);
 
                 if (course != null)
@@ -48,7 +45,6 @@ namespace Day05_Task
                     // Check if the student is already enrolled in the course
                     if (!student.CoursesEnrolled.Contains(course))
                     {
-                        // Enroll the student in the course
                         student.EnrollInCourse(course);
                         Console.WriteLine($"Student {student.Name} enrolled in course {courseName}.");
                     }
@@ -69,7 +65,6 @@ namespace Day05_Task
             }
         }
 
-        // Method to display all students and their details
         public void DisplayAllStudents()
         {
             Console.WriteLine("All Students:");
@@ -85,7 +80,6 @@ namespace Day05_Task
             }
         }
 
-        // Method to display all courses and their details
         public void DisplayAllCourses()
         {
             Console.WriteLine("All Courses:");
