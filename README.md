@@ -32,3 +32,12 @@
         - for , while , do while
 
 <hr/>
+
+- Day 04
+    - Functions 
+        - Parameters
+        - Named Parameters
+        - Default Parameters
+    - Intro to OOP
+
+<hr/>
