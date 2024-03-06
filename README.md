@@ -34,6 +34,7 @@
 <hr/>
 
 - Day 04
+    - Pass by Value & Pass by Refrence
     - Functions 
         - Parameters
         - Named Parameters
@@ -41,3 +42,17 @@
     - Intro to OOP
 
 <hr/>
+
+- Day 05
+    - OOP 
+        - Classes
+
+<hr />
+
+- Day 06
+    - OOP
+        - Encapsulation 
+            - Properties
+            - Setters and Getters
+
+<hr />
