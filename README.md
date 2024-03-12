@@ -54,5 +54,15 @@
         - Encapsulation 
             - Properties
             - Setters and Getters
-
 <hr />
+
+- Day 07
+    - OOP
+        - attributes
+        - properties
+            - automatic properties
+        - constructors
+            - copy constructors
+        - operator overloading
+
+<hr /> 
