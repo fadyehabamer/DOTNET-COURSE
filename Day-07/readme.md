@@ -3,3 +3,6 @@
 
 ----
 ## The Link of the recorded will be uploaded Soon :)
+
+https://github.com/fadyehabamer/DOTNET-COURSE/assets/55705836/c7b080cf-ddea-483d-a34b-2e32d68f72d7
+
