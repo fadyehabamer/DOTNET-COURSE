@@ -66,3 +66,16 @@
         - operator overloading
 
 <hr /> 
+
+- Day 08 
+    - OOP
+        - inheritance
+        - Enums
+
+<hr />
+
+- Day 09
+    - OOP
+        - Abstraction
+        - interface
+        - Exceptions
