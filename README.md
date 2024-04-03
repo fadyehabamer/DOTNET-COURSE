@@ -81,3 +81,26 @@
         - Exceptions
 
 <hr />
+
+- Day 10
+    - Generics
+
+<hr />
+
+- Day 11
+    - Introduction to Algorithms & Data structures
+    - Big O
+    - C# Data Structure
+<hr />
+
+- Day 12
+    - Revision (C# Basics)
+
+<hr />
+
+
+
+
+
+
+    
