@@ -9,3 +9,5 @@ Contains Dublicate|https://leetcode.com/problems/contains-duplicate/description/
 is Anagram|https://leetcode.com/problems/valid-anagram/
 Longest Common prefix|https://leetcode.com/problems/longest-common-prefix/
 two sum|https://leetcode.com/problems/two-sum/
+Employess Mangment | Hacker Rank C# Basics Test
+Team Interface | Hacker Rank C# Basics Test
