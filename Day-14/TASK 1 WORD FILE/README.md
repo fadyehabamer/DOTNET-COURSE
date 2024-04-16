@@ -11,7 +11,6 @@ CREATE TABLE Employees (
     Salary DECIMAL(10, 4)
 );
 ```
-![alt text](image.png)
 
 <hr/>
 
@@ -20,7 +19,6 @@ CREATE TABLE Employees (
 ALTER TABLE Employees
 ADD Department VARCHAR(50);
 ```
-![alt text](image-1.png)
 <hr/>
 
 ### 3. Remove the "Salary" column from the "Employees" table:
@@ -28,7 +26,6 @@ ADD Department VARCHAR(50);
 ALTER TABLE Employees
 DROP COLUMN Salary;
 ```
-![alt text](image-2.png)
 <hr/>
 
 
@@ -36,7 +33,6 @@ DROP COLUMN Salary;
 ```sql
 EXEC sp_rename 'Employees.Department', 'DeptName';  
 ```
-![alt text](image-3.png)
 
 <hr/>
 
@@ -48,7 +44,6 @@ CREATE TABLE Projects (
     ProjectName VARCHAR(100)
 );
 ```
-![alt text](image-4.png)
 
 <hr/>
 
@@ -57,7 +52,6 @@ CREATE TABLE Projects (
 ALTER TABLE Employees
 ADD CONSTRAINT PK_Employees PRIMARY KEY (ID);
 ```
-![alt text](image-5.png)
 
 <hr/>
 
@@ -66,7 +60,6 @@ ADD CONSTRAINT PK_Employees PRIMARY KEY (ID);
 ALTER TABLE Employees
 ADD CONSTRAINT UQ_Name UNIQUE (Name);
 ```
-![alt text](image-6.png)
 
 <hr/>
 
@@ -81,7 +74,6 @@ CREATE TABLE Customers (
     Status VARCHAR(50)
 );
 ```
-![alt text](image-7.png)
 
 <hr/>
 
@@ -90,7 +82,6 @@ CREATE TABLE Customers (
 ALTER TABLE Customers
 ADD CONSTRAINT UNIQUE_COLS UNIQUE (FirstName, LastName);
 ```
-![alt text](image-8.png)
 
 <hr/>
 
@@ -104,7 +95,6 @@ CREATE TABLE Orders (
     TotalAmount DECIMAL(10, 2)
 );
 ```
-![alt text](image-9.png)
 
 <hr/>
 
@@ -113,7 +103,6 @@ CREATE TABLE Orders (
 ALTER TABLE Orders
 ADD CONSTRAINT CHK_TotalAmount CHECK (TotalAmount > 0);
 ```
-![alt text](image-10.png)
 
 <hr />
 
@@ -122,10 +111,8 @@ ADD CONSTRAINT CHK_TotalAmount CHECK (TotalAmount > 0);
 CREATE SCHEMA Sales;
 ALTER SCHEMA Sales TRANSFER dbo.Orders;
 ```
-![alt text](image-11.png)
 
 ### 13.	Rename the "Orders" table to "SalesOrders."
 ```sql
 EXEC sp_rename 'Sales.Orders', 'SalesOrders';
 ```
-![alt text](image-12.png)
