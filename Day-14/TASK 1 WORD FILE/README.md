@@ -3,6 +3,9 @@
 
 <hr/>
 
+## Note
+> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-14/TASK%201%20WORD%20FILE/verifySoloution.md)
+
 ### 1.	Create a table named "Employees" with columns for ID (integer), Name (varchar), and Salary (decimal).
 ```sql
 CREATE TABLE Employees (
