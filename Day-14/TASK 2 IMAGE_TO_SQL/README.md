@@ -18,7 +18,6 @@ CREATE TABLE actor (
   act_gender CHAR(1)
 );
 ```
-![alt text](image.png)
 
 ---
 
@@ -30,7 +29,6 @@ CREATE TABLE director (
   dir_lname CHAR(20)
 );
 ```
-![alt text](image-1.png)
 
 ---
 
@@ -46,7 +44,6 @@ CREATE TABLE movie (
   mov_rel_country CHAR(5)
 );
 ```
-![alt text](image-2.png)
 
 ---
 
@@ -60,7 +57,6 @@ CREATE TABLE movie_cast (
   FOREIGN KEY (mov_id) REFERENCES movie(mov_id)
 );    
 ```
-![alt text](image-3.png)
 
 ---
 
@@ -73,7 +69,6 @@ CREATE TABLE movie_direction (
   FOREIGN KEY (mov_id) REFERENCES movie(mov_id)
 );
 ```
-![alt text](image-4.png)
 
 ---
 
@@ -84,7 +79,6 @@ CREATE TABLE reviewer (
   rev_name CHAR(30)
 );
 ```
-![alt text](image-5.png)
 
 ---
 
@@ -95,7 +89,6 @@ CREATE TABLE genres (
   gen_title CHAR(20)
 );
 ```
-![alt text](image-6.png)
 
 ---
 
@@ -108,7 +101,6 @@ CREATE TABLE movie_genres (
   FOREIGN KEY (gen_id) REFERENCES genres(gen_id)
 );
 ```
-![alt text](image-7.png)
 
 --- 
 
@@ -123,6 +115,5 @@ CREATE TABLE rating (
   FOREIGN KEY (rev_id) REFERENCES reviewer(rev_id)
 );
 ```
-![alt text](image-8.png)
 
 ---
