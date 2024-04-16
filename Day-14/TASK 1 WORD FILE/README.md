@@ -1,8 +1,6 @@
 # DataBase Task
 > Soloution For Data Definition Questions: (using SQL NOT GUI)
 
-<hr/>
-
 ## Note
 > Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-14/TASK%201%20WORD%20FILE/verifySoloution.md)
 
