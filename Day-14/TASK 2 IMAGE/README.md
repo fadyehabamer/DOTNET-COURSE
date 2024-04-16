@@ -1,131 +1,127 @@
 # DataBase Task
-> Soloution For Data Definition Questions: (using SQL NOT GUI)
+> Soloution For Image map to SQL
 
-<hr/>
+---
 
-### 1.	Create a table named "Employees" with columns for ID (integer), Name (varchar), and Salary (decimal).
+### Creating Database called FILM_PRODUCTION_COMPANIES
 ```sql
-CREATE TABLE Employees (
-    ID INT PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL,
-    Salary DECIMAL(10, 4)
+CREATE DATABASE FILM_PRODUCTION_COMPANIES;
+```
+
+### Creating 'actor' table
+```sql
+CREATE TABLE actor (
+  act_id INTEGER PRIMARY KEY,
+  act_fname CHAR(20),
+  act_lname CHAR(20),
+  act_gender CHAR(1)
 );
 ```
 ![alt text](image.png)
 
-<hr/>
+---
 
-### 2. Add a new column named "Department" to the "Employees" table with data type varchar(50):
-``` sql
-ALTER TABLE Employees
-ADD Department VARCHAR(50);
+### Creating 'director' table
+```SQL
+CREATE TABLE director (
+  dir_id INTEGER PRIMARY KEY,
+  dir_fname CHAR(20),
+  dir_lname CHAR(20)
+);
 ```
 ![alt text](image-1.png)
-<hr/>
 
-### 3. Remove the "Salary" column from the "Employees" table:
-``` sql
-ALTER TABLE Employees
-DROP COLUMN Salary;
+---
+
+### Creating 'movie' table
+```SQL
+CREATE TABLE movie (
+  mov_id INTEGER PRIMARY KEY,
+  mov_title CHAR(50),
+  mov_year INTEGER,
+  mov_time INTEGER,
+  mov_lang CHAR(50),
+  mov_dt_rel DATE,
+  mov_rel_country CHAR(5)
+);
 ```
 ![alt text](image-2.png)
-<hr/>
 
+---
 
-### 4. Rename the "Department" column in the "Employees" table to "DeptName":
-```sql
-EXEC sp_rename 'Employees.Department', 'DeptName';  
+### Creating 'movie_cast' table
+```SQL
+CREATE TABLE movie_cast (
+  act_id INTEGER,
+  mov_id INTEGER,
+  role CHAR(30),
+  FOREIGN KEY (act_id) REFERENCES actor(act_id),
+  FOREIGN KEY (mov_id) REFERENCES movie(mov_id)
+);    
 ```
 ![alt text](image-3.png)
 
-<hr/>
+---
 
-### 5. Create a new table called "Projects" with columns for ProjectID (integer) and ProjectName (varchar):
-
-```sql
-CREATE TABLE Projects (
-    ProjectID INT PRIMARY KEY,
-    ProjectName VARCHAR(100)
+### Creating 'movie_direction' table
+```SQL
+CREATE TABLE movie_direction (
+  dir_id INTEGER,
+  mov_id INTEGER,
+  FOREIGN KEY (dir_id) REFERENCES director(dir_id),
+  FOREIGN KEY (mov_id) REFERENCES movie(mov_id)
 );
 ```
 ![alt text](image-4.png)
 
-<hr/>
+---
 
-### 6. Add a primary key constraint to the "Employees" table for the "ID" column:
-``` sql
-ALTER TABLE Employees
-ADD CONSTRAINT PK_Employees PRIMARY KEY (ID);
+### Creating 'reviewer' table
+```SQL
+CREATE TABLE reviewer (
+  rev_id INTEGER PRIMARY KEY,
+  rev_name CHAR(30)
+);
 ```
 ![alt text](image-5.png)
 
-<hr/>
+---
 
-### 7. Add a unique constraint to the "Name" column in the "Employees" table:
-``` sql
-ALTER TABLE Employees
-ADD CONSTRAINT UQ_Name UNIQUE (Name);
+### Creating 'genres' table
+```SQL
+CREATE TABLE genres (
+  gen_id INTEGER PRIMARY KEY,
+  gen_title CHAR(20)
+);
 ```
 ![alt text](image-6.png)
 
-<hr/>
+---
 
-### 8.Create a table named "Customers" with columns for CustomerID (integer), FirstName (varchar), LastName (varchar), Email (varchar), and Status (varchar):
-
-``` sql
-CREATE TABLE Customers (
-    CustomerID INT,
-    FirstName VARCHAR(100),
-    LastName VARCHAR(100),
-    Email VARCHAR(100),
-    Status VARCHAR(50)
+### Creating 'movie_genres' table
+```SQL
+CREATE TABLE movie_genres (
+  mov_id INTEGER,
+  gen_id INTEGER,
+  FOREIGN KEY (mov_id) REFERENCES movie(mov_id),
+  FOREIGN KEY (gen_id) REFERENCES genres(gen_id)
 );
 ```
 ![alt text](image-7.png)
 
-<hr/>
+--- 
 
-### 9. Add a unique constraint to the combination of "FirstName" and "LastName" columns in the "Customers" table:
-```sql
-ALTER TABLE Customers
-ADD CONSTRAINT UNIQUE_COLS UNIQUE (FirstName, LastName);
+### Creating 'rating' table
+```SQL
+CREATE TABLE rating (
+  mov_id INTEGER,
+  rev_id INTEGER,
+  rev_stars INTEGER,
+  num_o_ratings INTEGER,
+  FOREIGN KEY (mov_id) REFERENCES movie(mov_id),
+  FOREIGN KEY (rev_id) REFERENCES reviewer(rev_id)
+);
 ```
 ![alt text](image-8.png)
 
-<hr/>
-
-### 10. Create a table named "Orders" with columns for OrderID (integer), CustomerID (integer), OrderDate (datetime), and TotalAmount (decimal):
-
-``` sql
-CREATE TABLE Orders (
-    OrderID INT,
-    CustomerID INT,
-    OrderDate DATETIME,
-    TotalAmount DECIMAL(10, 2)
-);
-```
-![alt text](image-9.png)
-
-<hr/>
-
-### 11. Add a check constraint to the "TotalAmount" column in the "Orders" table to ensure that it is greater than zero:
-```sql
-ALTER TABLE Orders
-ADD CONSTRAINT CHK_TotalAmount CHECK (TotalAmount > 0);
-```
-![alt text](image-10.png)
-
-<hr />
-
-### 12. Create a schema named "Sales" and move the "Orders" table into this schema:
-``` sql
-CREATE SCHEMA Sales;
-ALTER SCHEMA Sales TRANSFER dbo.Orders;
-```
-![alt text](image-11.png)
-
-### 13.	Rename the "Orders" table to "SalesOrders."
-```sql
-EXEC sp_rename 'Sales.Orders', 'SalesOrders';
-```
-![alt text](image-12.png)
+---
