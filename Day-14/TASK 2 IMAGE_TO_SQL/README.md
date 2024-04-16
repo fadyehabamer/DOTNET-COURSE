@@ -3,6 +3,8 @@
 
 ---
 
+> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-14/TASK%201%20WORD%20FILE/verifySoloution.md)
+
 ### Creating Database called FILM_PRODUCTION_COMPANIES
 ```sql
 CREATE DATABASE FILM_PRODUCTION_COMPANIES;
