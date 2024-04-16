@@ -1,9 +1,8 @@
 # DataBase Task
 > Soloution For Image map to SQL
 
----
-
-> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-14/TASK%201%20WORD%20FILE/verifySoloution.md)
+## Note
+> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-14/TASK%202%20IMAGE_TO_SQL/verifySoloution.md)
 
 ### Creating Database called FILM_PRODUCTION_COMPANIES
 ```sql
