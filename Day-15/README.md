@@ -2,7 +2,7 @@
 > Soloution For Data Manipulation Questions for 20-4-2024
 
 ## Note
-> Verify of Soloution will be found here [verifySoloution.md]()
+> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-15/verifySoloution.md)
 
 ### 2.	Create a schema named "Sales" within the "CompanyDB" database.
 ```sql
@@ -35,7 +35,6 @@ ADD hire_date DATE;
 ```sql
 insert into CompanyDB.Sales.employees (first_name, last_name, salary, hire_date) values ('Carlynne', 'Salerno', 16675, '2023-03-01');
 ```
-![alt text](image-3.png)
 <hr/>
 
 
