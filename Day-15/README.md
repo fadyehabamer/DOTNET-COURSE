@@ -3,7 +3,7 @@
 > Dummydata insertion and soloution.sql file is attached
 
 ## Note
-> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-15/verifySoloution.md)
+> Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-15/VerfiySoloutions/verifySoloution.md)
 
 ### 2.	Create a schema named "Sales" within the "CompanyDB" database.
 ```sql
