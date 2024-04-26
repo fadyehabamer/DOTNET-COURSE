@@ -1,5 +1,6 @@
 # DataBase Task
 > Soloution For Data Manipulation Questions for 20-4-2024
+> Dummydata insertion and soloution.sql file is attached
 
 ## Note
 > Verify of Soloution will be found here [verifySoloution.md](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-15/verifySoloution.md)
