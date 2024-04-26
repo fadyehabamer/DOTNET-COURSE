@@ -123,6 +123,7 @@ FROM CompanyDB.Sales.employees
 WHERE salary BETWEEN 10000 AND 20000;
 ```
 
+<hr />
 
 ### 10.	Show employees with names containing the substring 'man.'
 ```sql
@@ -130,6 +131,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE first_name LIKE '%man%' OR last_name LIKE '%man%';
 ```
+<hr />
 
 ### 11.	Display employees with a NULL value in the "hire_date" column.
 ```sql
@@ -137,6 +139,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE hire_date IS NULL;
 ```
+<hr />
 
 ### 12.	Select employees with a salary in the set (5000, 10000, 15000). 
 > DONT GET IT ?
@@ -145,6 +148,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE salary IN (5000, 10000, 15000);
 ```
+<hr />
 
 ### 13.	Retrieve employees hired between '2022-11-11' and '2023-01-01.'
 ```sql
@@ -152,6 +156,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE hire_date BETWEEN '2022-11-11' AND '2023-01-01';
 ```
+<hr />
 
 ### 14.	List employees with salaries in descending order.
 ```sql
@@ -159,6 +164,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 ORDER BY salary DESC;
 ```
+<hr />
 
 ### 15.	Show the first 5 employees ordered by "last_name" in ascending order.
 ```sql
@@ -166,6 +172,7 @@ SELECT TOP 5 *
 FROM CompanyDB.Sales.employees
 ORDER BY last_name;
 ```
+<hr />
 
 ### 16.	Display employees with a salary greater than 15000 and hired in 2022.
 ```sql
@@ -176,12 +183,17 @@ AND hire_date >= '2022-01-01'
 AND hire_date <= '2022-12-31';
 ```
 
+<hr />
+
 ### 17.	Select employees whose first name is 'John' or 'Jane.'
 ```sql
 SELECT *
 FROM CompanyDB.Sales.employees
 WHERE first_name = 'John' OR first_name = 'Jane';
 ```
+<hr />
+
+
 
 ### 18.	List employees with a salary less than or equal to 10000 and a hire date after '2022-01-01.'
 ```sql
@@ -190,6 +202,7 @@ FROM CompanyDB.Sales.employees
 WHERE salary <= 10000
 AND hire_date > '2022-01-01';
 ```
+<hr />
 
 
 ### 19.	Retrieve employees with a salary greater than the average salary.
@@ -198,6 +211,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE salary > (SELECT AVG(salary) FROM CompanyDB.Sales.employees);
 ```
+<hr />
 
 
 ### 20.	Display the 3rd to 7th highest-paid employees.
@@ -207,6 +221,7 @@ FROM CompanyDB.Sales.employees
 ORDER BY salary DESC
 OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY;
 ```
+<hr />
 
 ### 21.	List employees hired after '2021-01-01' in alphabetical order.
 ```sql
@@ -216,6 +231,9 @@ WHERE hire_date > '2021-01-01'
 ORDER BY first_name ASC, last_name ASC;
 ```
 
+<hr />
+
+
 ### 22.	Retrieve employees with a salary greater than 15000 and last name not starting with 'A.'
 ```sql
 SELECT *
@@ -223,7 +241,10 @@ FROM CompanyDB.Sales.employees
 WHERE salary > 15000
 AND last_name NOT LIKE 'A%'
 ORDER BY last_name;
+
 ```
+<hr />
+
 
 ### 23.	Display employees with a salary that is not NULL.
 ```sql
@@ -231,6 +252,7 @@ SELECT *
 FROM CompanyDB.Sales.employees
 WHERE salary IS NOT NULL;
 ```
+<hr />
 
 ### 24.	Show employees with names containing 'e' or 'i' and a salary greater than 10000.
 ```sql
