@@ -2,7 +2,9 @@
 
 > Soloution For Data Manipulation Questions for 2024-04-27
 >
-> 
+> [Triggers in SQL are explained here ](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-16/Triggers%20in%20SQL%20Server.pdf)
+>
+>  [The basic understanding , ERD , Mapping will be found here](https://github.com/fadyehabamer/DOTNET-COURSE/blob/main/Day-16/ERD%20%26%20MAPPING%2027-4.pdf)
 
 ### 1. SELECT: Retrieve all columns from the Doctor table.
 
