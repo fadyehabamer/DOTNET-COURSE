@@ -179,7 +179,7 @@ WHERE
 
 ```sql
 SELECT
-doc_id , name, phone, email, specialization, yrs_of_exp,
+doctorId , name, phone, email, specialization, yrs_of_exp,
 --from patient as null
 NULL AS age, NULL AS address, NULL AS medicare_card_num
 FROM Doctor
@@ -199,9 +199,9 @@ FROM Patient;
 WITH PatientDoctorCTE (patient_id, patient_name, doctor_id, doctor_name)
 AS (
 	SELECT
-		pat.UR_NUM, pat.name, doc.doc_id, doc.name
+		pat.UR_NUM, pat.name, doc.doctorId, doc.name
 	FROM Patient pat JOIN Doctor doc
-		ON doc.doc_id = pat.doc_id
+		ON doc.doctorId = pat.doctorId
 )
 
 
@@ -236,7 +236,7 @@ VALUES
 ### 24. UPDATE: Update the phone number of a doctor.
 
 ```sql
-UPDATE Doctor SET phone = '01014489085' WHERE doc_id = 11;
+UPDATE Doctor SET phone = '01014489085' WHERE doctorId = 11;
 ```
 
 <hr />
