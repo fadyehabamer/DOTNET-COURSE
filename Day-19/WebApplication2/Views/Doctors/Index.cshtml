@@ -1,5 +1,4 @@
-﻿
-<!-- ==========Page Header Section Start Here========== -->
+﻿<!-- ==========Page Header Section Start Here========== -->
 <section class="page-header-section service-title style-1"
          style="background-image: url('@Url.Content("~/images/pageheader/pageheader.jpg")')">
     <div class="page-header-content">
@@ -12,6 +11,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li class="active">Doctors</li>
                 </ol>
+
+                <a href="Doctors/CreateNewDoctor"
+                    class="btn btn-primary w-100 text-white"
+                >
+                    Create New Doctor    
+                </a>
+
             </div>
         </div>
     </div>
@@ -28,7 +34,7 @@
             <div class="row justify-content-center">
                 @foreach (var item in Model)
                 {
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
                         <div class="doctor-item style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                             <div class="doctor-inner">
                                 <div class="doctor-thumb">
@@ -39,18 +45,29 @@
                                         <h4><a href="Doctors/details/@item.Id">Dr. @item.Name</a></h4>
                                         <p class="digi">@item.Specialization</p>
                                     </div>
-                                    <div>
-                                        <a href="Doctors/MakeAppointment/@item.Id" class="btn btn-primary text-white">
+                                    <div class="">
+
+                                        <a href="Doctors/MakeAppointment/@item.Id" class="btn btn-primary text-white d-block mb-2">
                                             Make an Appointment
                                         </a>
+
+                                        <a href="Doctors/EditDoctor/@item.Id" class="btn btn-outline-primary d-block text-primary mb-2">
+                                            Edit Doctor
+                                        </a>
+
+                                        <a href="Doctors/DeleteDoctor/@item.Id" class="btn btn-danger text-white d-block">
+                                            Delete Doctor
+                                        </a>
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 }
-                
-              
+
+
             </div>
         </div>
     </div>

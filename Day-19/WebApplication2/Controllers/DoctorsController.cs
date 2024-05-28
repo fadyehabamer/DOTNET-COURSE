@@ -7,7 +7,6 @@ namespace WebApplication2.Controllers
 {
     public class DoctorsController : Controller
     {
-
         ApplicationDbContext context = new ApplicationDbContext();
         public IActionResult Index()
         {
@@ -21,6 +20,73 @@ namespace WebApplication2.Controllers
             return View(doctor);
         }
 
+        public IActionResult CreateNewDoctor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CreateNewDoctor(Doctor doctor)
+        {
+            var Doctor = new Doctor();
+            Doctor.Name = doctor.Name;
+            Doctor.Details = doctor.Details;
+            Doctor.Specialization = doctor.Specialization;
+            Doctor.Phone = doctor.Phone;
+            Doctor.Email = doctor.Email;
+            Doctor.Address = doctor.Address;
+            doctor.Image = "blabla";
+
+            if (Doctor != null)
+            {
+                context.Doctors.Add(doctor);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(doctor);
+        }
+
+
+        public IActionResult DeleteDoctor(int id)
+        {
+            var doctor = context.Doctors.Find(id);
+            if (doctor != null)
+            {
+                context.Doctors.Remove(doctor);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return NotFound();
+        }
+
+        public IActionResult EditDoctor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EditDoctor(int id, Doctor doctor)
+        {
+            var Doctor = context.Doctors.Find(id);
+            Doctor.Name = doctor.Name;
+            Doctor.Details = doctor.Details;
+            Doctor.Specialization = doctor.Specialization;
+            Doctor.Phone = doctor.Phone;
+            Doctor.Email = doctor.Email;
+            Doctor.Address = doctor.Address;
+            Doctor.Image = "blabla";
+
+            if (Doctor != null)
+            {
+                context.Doctors.Update(Doctor);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(doctor);
+        }
+
+
+
         [HttpGet]
         public IActionResult MakeAppointment()
         {
@@ -28,7 +94,7 @@ namespace WebApplication2.Controllers
         }
 
         [HttpPost]
-        public IActionResult MakeAppointment(int id ,Appointment appointment)
+        public IActionResult MakeAppointment(int id, Appointment appointment)
         {
             //var doctor  = context.Doctors.Find(id);
 

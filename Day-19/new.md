@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Hospital Reservation System is a web application built using the .NET MVC framework and Entity Framework for backend functionality, with Bootstrap for the frontend design. This system allows users to view general information about the hospital, learn about the hospital, browse through a list of doctors, view details of individual doctors, make appointments, and list all appointments.
+The Hospital Reservation System is a web application built using the .NET MVC framework and Entity Framework for backend functionality, with Bootstrap for the frontend design. This system allows users to view general information about the hospital, learn about the hospital, browse through a list of doctors, view details of individual doctors, make appointments, and manage doctor information.
 
 ## Features
 
@@ -12,6 +12,8 @@ The Hospital Reservation System is a web application built using the .NET MVC fr
 - **Doctor Details Page**: Shows detailed information about a specific doctor.
 - **Make Appointment Page**: Allows users to make an appointment with a doctor.
 - **Appointment Page**: Lists all the appointments made.
+- **Edit Doctor Page**: Allows editing the details of a specific doctor.
+- **Delete Doctor**: Allows deleting a doctor from the database.
 
 ## Technologies Used
 
@@ -33,21 +35,19 @@ The models represent the data structure of the application. The primary models i
 Controllers handle the user input and responses. The primary controllers include:
 
 - **HomeController**: Handles requests for the Home and About pages.
-- **DoctorsController**: Manages the display of doctors, doctor details, and appointment creation.
+- **DoctorsController**: Manages the display of doctors, doctor details, appointment creation, and doctor management (edit and delete).
 - **AppointmentController**: Manages the listing of appointments.
 
 ### Views
 
 The views render the user interface. The primary views include:
 
-- **/Index**: Displays general information about the hospital.
-- **/About**: Displays information about the hospital.
+- **Home/Index**: Displays general information about the hospital.
+- **Home/About**: Displays information about the hospital.
 - **Doctors/Index**: Displays a list of doctors retrieved from the database.
-- **Doctors/CreateNewDoctor**: Creates a new doctor and save it to database.
-- **Doctors/EditDoctor**: Edit an Exsisting doctor and save new data to database.
-- **Doctors/Delete**: Deletes selected doctor and remove it to database.
 - **Doctors/Details**: Shows details for a specific doctor.
 - **Doctors/MakeAppointment**: Provides a form for making an appointment with a doctor.
+- **Doctors/EditDoctor**: Provides a form for editing a doctor's details.
 - **Appointment/Index**: Lists all appointments.
 
 ## Routes
@@ -92,22 +92,25 @@ The application uses the following routes:
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/image.png)
+![Home Page](screenshots/home.png)
 
 ### About Page
-![About Page](screenshots/2.png)
+![About Page](screenshots/about.png)
 
 ### Doctors List
-![Doctors List](screenshots/3.png)
+![Doctors List](screenshots/doctors.png)
 
 ### Doctor Details
-![Doctor Details](screenshots/4.png)
+![Doctor Details](screenshots/doctor-details.png)
 
 ### Make Appointment
-![Make Appointment](screenshots/5.png)
+![Make Appointment](screenshots/make-appointment.png)
+
+### Edit Doctor
+![Edit Doctor](screenshots/edit-doctor.png)
 
 ### Appointments List
-![Appointments List](screenshots/6.png)
+![Appointments List](screenshots/appointments.png)
 
 ## Contributing
 
