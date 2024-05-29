@@ -13,6 +13,9 @@ namespace P01_StudentSystem
         static void Main(string[] args)
         {
 
+            // Try to be cool and use arabic words but failed ✌️
+            // Console.OutputEncoding = Encoding.UTF8;
+
             using (var context = new StudentSystemContext())
             {
                 bool exit = false;
