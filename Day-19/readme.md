@@ -40,8 +40,8 @@ Controllers handle the user input and responses. The primary controllers include
 
 The views render the user interface. The primary views include:
 
-- **Home/Index**: Displays general information about the hospital.
-- **Home/About**: Displays information about the hospital.
+- **/Index**: Displays general information about the hospital.
+- **/About**: Displays information about the hospital.
 - **Doctors/Index**: Displays a list of doctors retrieved from the database.
 - **Doctors/Details**: Shows details for a specific doctor.
 - **Doctors/MakeAppointment**: Provides a form for making an appointment with a doctor.
@@ -54,7 +54,7 @@ The application uses the following routes:
 - **Home**
   - `/`: Displays the home page with general information about the hospital.
 - **About**
-  - `/home/about`: Displays the about page with information about the hospital.
+  - `/about`: Displays the about page with information about the hospital.
 - **Doctors**
   - `/doctors`: Displays a list of doctors.
   - `/doctors/details/{id}`: Displays details for a specific doctor identified by `{id}`.
