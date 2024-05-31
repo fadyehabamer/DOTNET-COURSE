@@ -115,7 +115,3 @@ The application uses the following routes:
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-By following this structure, you will have a comprehensive and organized Markdown documentation for your Hospital Reservation System project.
