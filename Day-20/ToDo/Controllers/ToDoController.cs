@@ -16,11 +16,19 @@ namespace ToDo.Controllers
         // Displays the list of to-do items
         public IActionResult Index()
         {
-            if (TempData["UserName"] != null)
+            //if (TempData["UserName"] != null)
+            //{
+            //    ViewBag.UserName = TempData["UserName"].ToString();
+            //}
+            //return View(_context.ToDos.ToList());
+
+            if (Request.Cookies["UserName"] != null)
             {
-                ViewBag.UserName = TempData["UserName"].ToString();
+                ViewBag.UserName = Request.Cookies["UserName"];
             }
             return View(_context.ToDos.ToList());
+
+
         }
 
         #region Create
@@ -154,6 +162,17 @@ namespace ToDo.Controllers
             return View();
         }
 
+        //[HttpPost]
+        //public IActionResult GetUserName(string username)
+        //{
+        //    if (string.IsNullOrEmpty(username))
+        //    {
+        //        return RedirectToAction("GetUserName");
+        //    }
+        //    TempData["UserName"] = username;
+        //    return RedirectToAction("Index");
+        //}
+
         [HttpPost]
         public IActionResult GetUserName(string username)
         {
@@ -161,9 +180,15 @@ namespace ToDo.Controllers
             {
                 return RedirectToAction("GetUserName");
             }
-            TempData["UserName"] = username;
+            CookieOptions options = new CookieOptions
+            {
+                Expires = DateTime.Now.AddDays(7)
+            };
+            Response.Cookies.Append("UserName", username, options);
             return RedirectToAction("Index");
         }
+
+
 
     }
 }
