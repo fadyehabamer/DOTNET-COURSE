@@ -4,18 +4,18 @@
 
 ### Controllers
 - ActorController.cs:
-    > Manages actor-related actions. Uses the ActorRepository to interact with actor data.
+    - Manages actor-related actions. Uses the ActorRepository to interact with actor data.
 - CategoryController.cs:
-    > Manages category-related actions. Uses the CategoryRepository to interact with category data.
+    - Manages category-related actions. Uses the CategoryRepository to interact with category data.
 - CinemaController.cs: 
-    > Manages cinema-related actions. Uses the CinemaRepository to interact with cinema data.
+    - Manages cinema-related actions. Uses the CinemaRepository to interact with cinema data.
 - HomeController.cs: 
-    > Manages the homepage and other static pages.
+    - Manages the homepage and other static pages.
 - MovieController.cs:
-    > Manages movie-related actions. Uses the MovieRepository to interact with movie data, including a search functionality.
+    - Manages movie-related actions. Uses the MovieRepository to interact with movie data, including a search functionality.
 
 ### Repository Design Pattern
-The repository design pattern is implemented in this project to promote a clean separation of concerns. Each repository interface defines methods for accessing the data, and the corresponding repository class implements these methods.
+    - The repository design pattern is implemented in this project to promote a clean separation of concerns. Each repository interface defines methods for accessing the data, and the corresponding repository class implements these methods.
 
 ### Models
 - Actor.cs: Defines the Actor entity.
@@ -44,4 +44,4 @@ The repository design pattern is implemented in this project to promote a clean 
 - ApplicationDbContext.cs: Configures the Entity Framework Core context.
 
 ### Usage of Search Functionality
-The search bar in the navbar allows users to search for movies by name.
+- The search bar in the navbar allows users to search for movies by name.
