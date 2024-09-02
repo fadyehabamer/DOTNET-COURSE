@@ -1,7 +1,7 @@
 ﻿namespace Eticket.Models;
 using Eticket.Data;
 
-    
+
     public class Movie
     {
         public int Id { get; set; }
@@ -15,8 +15,8 @@ using Eticket.Data;
         public DateTime EndDate { get; set; }
 
         public   MovieStatus MovieStatus { get; set; }
-    
-        
+
+
 
         public int CinemaId { get; set; }
         public Cinema Cinema { get; set; }
@@ -28,7 +28,7 @@ using Eticket.Data;
 
         public List<Actor> Actors { get; set; }
 
-        public List<ActorMovies> ActorMovies { get; set; } 
+        public List<ActorMovies> ActorMovies { get; set; }
 
 
 

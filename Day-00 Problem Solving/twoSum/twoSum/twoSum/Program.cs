@@ -16,7 +16,7 @@
         public static int[] TwoSum(int[] nums, int target)
         {
             int[] result = new int[2];
-            
+
             Dictionary<int, int> dict = new Dictionary<int, int>();
 
             for (int i = 0; i < nums.Length; i++)
@@ -31,7 +31,7 @@
                 dict[nums[i]] = i;
             }
             return result;
-            
+
         }
     }
 }

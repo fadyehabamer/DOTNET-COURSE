@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     internal class ClsCalculatorGeneric
     {
-        public static bool AreEqual<T>(T a, T b) 
+        public static bool AreEqual<T>(T a, T b)
         {
             return a.Equals(b);
         }

@@ -11,7 +11,7 @@ namespace contains_duplicate
         public bool ContainsDublicate(int[] nums)
         {
             Dictionary <int, int> keyValuePairs = new Dictionary <int, int>();
-            
+
             for (int i = 0; i < nums.Length; i++)
             {
                 if (keyValuePairs.ContainsKey(nums[i]))

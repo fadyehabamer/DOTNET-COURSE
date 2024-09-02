@@ -31,8 +31,7 @@ namespace ToDo.Controllers
 
         public IActionResult ex()
         {
-            throw new Exception("This is an exception"); 
+            throw new Exception("This is an exception");
         }
     }
 }
- 

@@ -20,7 +20,7 @@ namespace Eticket.Controllers
 
         public IActionResult Details(int id)
         {
-            var movie = movieRepository.GetMovieById(id);   
+            var movie = movieRepository.GetMovieById(id);
 
             if (movie == null)
             {

@@ -4,7 +4,7 @@ namespace WebApplication2.Models
 {
     public class Doctor
     {
-        [Key]    
+        [Key]
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string Details { get; set; } = null!;
@@ -15,7 +15,7 @@ namespace WebApplication2.Models
         public string? Email { get; set; }
 
 
-        // Navigation 
+        // Navigation
         public ICollection<Appointment> Appointments { get; set; } = null!;
     }
 }

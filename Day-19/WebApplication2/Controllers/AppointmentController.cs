@@ -11,12 +11,12 @@ namespace WebApplication2.Controllers
         {
             var allApointments = context.Appointments.ToList();
             return View(allApointments);
-           
+
         }
 
 
 
-        
+
 
     }
 }

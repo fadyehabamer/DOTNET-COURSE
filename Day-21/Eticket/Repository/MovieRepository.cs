@@ -7,17 +7,17 @@ namespace Eticket.Repository
 
 {
     public class MovieRepository : IMovieRepository
-    { 
+    {
         ApplicationDbContext context = new ApplicationDbContext();
         public List<Movie> GetAllMovies()
         {
             return context.Movies.ToList();
-            
+
         }
 
         public Movie GetMovieById(int movieId)
         {
-            
+
             return context.Movies
              .Include(m => m.Category)
              .Include(m => m.ActorMovies)

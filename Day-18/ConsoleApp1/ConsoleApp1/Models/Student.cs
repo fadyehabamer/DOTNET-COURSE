@@ -16,7 +16,7 @@ namespace P01_StudentSystem.Models
 
         // Navigation properties
         // 1. Each student can have many courses and each course can have many students
-        // 2. Each student can have many homeworks                              
+        // 2. Each student can have many homeworks
         public ICollection<StudentCourse> StudentCourses { get; set; }
         public ICollection<Homework> Homeworks { get; set; }
     }

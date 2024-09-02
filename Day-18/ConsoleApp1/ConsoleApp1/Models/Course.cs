@@ -14,7 +14,7 @@ namespace P01_StudentSystem.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal Price { get; set; }
-        
+
         // Navigation Properties
         // 1. Each course can have many students and each student can have many courses
         // 2. Each course can have many resources

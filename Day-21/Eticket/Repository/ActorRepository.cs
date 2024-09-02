@@ -8,7 +8,7 @@ namespace Eticket.Repository
     public class ActorRepository : IActorRepository
     {
         ApplicationDbContext context = new ApplicationDbContext();
-       
+
         public List<Actor> GetAllActors()
         {
             return context.Actors.ToList();
@@ -24,6 +24,6 @@ namespace Eticket.Repository
 
         }
 
-        
+
     }
 }

@@ -14,7 +14,7 @@ namespace Eticket.Controllers
         {
             var actors = actorRepository.GetAllActors();
             return View(actors);
-          
+
         }
 
         public IActionResult Details(int id)

@@ -10,14 +10,14 @@ namespace IsAnagram
     {
         public  bool IsAnagramFunc(string s, string t)
         {
-            
+
             if (s.Length != t.Length)
             {
                 return false;
             }
 
             Dictionary<char, int> dict = new Dictionary<char, int>();
-            
+
             for (int i = 0; i < s.Length; i++)
             {
                 if (dict.ContainsKey(s[i]))

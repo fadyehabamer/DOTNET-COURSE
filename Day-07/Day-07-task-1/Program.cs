@@ -1,6 +1,6 @@
 ﻿namespace Day_07_task_1
 {
-    
+
 
     public class StaticUserOption
     {

@@ -8,7 +8,7 @@ namespace Eticket.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-      
+
 
         public IActionResult Index()
         {
@@ -20,6 +20,6 @@ namespace Eticket.Controllers
         {
             return View();
         }
-      
+
     }
 }

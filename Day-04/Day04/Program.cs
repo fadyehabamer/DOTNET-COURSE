@@ -7,7 +7,7 @@
             // convert number to string
             string numberString = n.ToString();
             // Console.WriteLine(numberString);
-            // 
+            //
             int[] digits = new int[numberString.Length];
 
             for (int i = 0; i < numberString.Length; i++)
@@ -24,9 +24,9 @@
             }
 
             Console.WriteLine($"Sum of digits: {sum}");
-               
+
         }
-        
+
          static void Swap(int a, int b)
         {
             int temp = 0;

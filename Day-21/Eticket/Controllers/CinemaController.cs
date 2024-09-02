@@ -22,7 +22,7 @@ namespace Eticket.Controllers
             return View(cinema);
         }
 
-        
+
 
 
     }

@@ -23,7 +23,7 @@ namespace ConsoleApp1.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Student 
+            // Student
             modelBuilder.Entity<Student>(entity =>
             {
                 entity.HasKey(e => e.StudentId);
@@ -55,7 +55,7 @@ namespace ConsoleApp1.Data
 
             // ---------------------
 
-            // Course 
+            // Course
             modelBuilder.Entity<Course>(entity =>
             {
                 entity.HasKey(e => e.CourseId);
@@ -93,7 +93,7 @@ namespace ConsoleApp1.Data
 
             // ---------------------
 
-            // Resource 
+            // Resource
             modelBuilder.Entity<Resource>(entity =>
             {
                 entity.HasKey(e => e.ResourceId);
@@ -116,7 +116,7 @@ namespace ConsoleApp1.Data
 
             // ---------------------
 
-            // Homework 
+            // Homework
             modelBuilder.Entity<Homework>(entity =>
             {
                 entity.HasKey(e => e.HomeworkId);
@@ -142,7 +142,7 @@ namespace ConsoleApp1.Data
 
             // ---------------------
 
-            // StudentCourse 
+            // StudentCourse
             modelBuilder.Entity<StudentCourse>(entity =>
             {
                 entity.HasKey(sc => new { sc.StudentId, sc.CourseId });

@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
 
-            // Queue 
+            // Queue
             // First In First Out (FIFO)
-            Queue <int> queue = new Queue<int>();   
+            Queue <int> queue = new Queue<int>();
             queue.Enqueue(1);
             queue.Enqueue(2);
             queue.Enqueue(3);
